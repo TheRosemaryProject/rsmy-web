@@ -92,11 +92,23 @@
         div.header a:hover {
             color: #0a58ca;
         }
+        b.mobile {
+            display: none;
+        }
+        @media (max-width: 550px) {
+            b.mobile {
+                display: initial;
+            }
+            b.desktop {
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="header">
-        <b>🚀 Try the new Rosemary website Beta! <a href="https://gonerogue.ml/rsmy-web-beta/index.html">Click here</a></b>
+        <b class="desktop">🚀 Try the new Rosemary Website Beta! <a href="https://gonerogue.ml/rsmy-web-beta/index.html">Click here</a></b>
+        <b class="mobile">🚀 New RSMY Website Beta! <a href="https://gonerogue.ml/rsmy-web-beta/index.html">Go!</a></b>
     </div>
     <div class="body">
         <div id="logo">
