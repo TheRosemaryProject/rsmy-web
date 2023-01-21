@@ -60,30 +60,59 @@
         .flex-container {
             display: grid;
         }
+
+        /* Header, body */
+        div.body {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            left: 0;
+        }
+        html,body {
+            margin: 0; padding: 0; min-width: 100%; min-height: 100%;
+        }
+        div.header {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgb(0, 178, 238);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+        }
     </style>
 </head>
 <body>
-    <div id="logo">
-    <a href="index.html">
-    <img id="logo" src="rsmy.svg" alt="logo" height="75vh">
-    </a>
+    <div class="header">
+        <b>🚀 Try the new Rosemary website Beta! <a href="https://gonerogue.ml/rsmy-web-beta/index.html">Click here</a></b>
     </div>
-    <header class="nav">
-        <div class="bob">
-            <nav>
-    <p class="c1"><a href="download.html">Download</a></p>
-    <p><a href="about.html">About Us</a></p>
-    <p><a href="src/cpp/tab.cpp">Code</a></p>
-    <p class=""><a href="http://gonerogueproductions.github.io/rosemary"><i class="fa fa-github"></i>GitHub</a></p>
-</div>
-</nav>
-    </header>
-    <h1>Rosemary, or RSMY</h1>
-    <h2>A programming language both approchable and fast.</h2>
-    <h2>Inspired by syntax from<br><br>
-        <img class="lang" src="python.png" alt="Python">
-        <img class="lang" src="php.png" alt="PHP">
-        <img class="lang" src="perl.png" alt="Perl">
-        <img class="lang" src="cpp.png" alt="C++">
+    <div class="body">
+        <div id="logo">
+            <a href="index.html">
+            <img id="logo" src="rsmy.svg" alt="logo" height="75vh">
+            </a>
+            </div>
+            <header class="nav">
+                <div class="bob">
+                    <nav>
+            <p class="c1"><a href="download.html">Download</a></p>
+            <p><a href="about.html">About Us</a></p>
+            <p><a href="src/cpp/tab.cpp">Code</a></p>
+            <p class=""><a href="http://gonerogueproductions.github.io/rosemary"><i class="fa fa-github"></i>GitHub</a></p>
+        </div>
+        </nav>
+            </header>
+            <h1>Rosemary, or RSMY</h1>
+            <h2>A programming language both approchable and fast.</h2>
+            <h2>Inspired by syntax from<br><br>
+                <img class="lang" src="python.png" alt="Python">
+                <img class="lang" src="php.png" alt="PHP">
+                <img class="lang" src="perl.png" alt="Perl">
+                <img class="lang" src="cpp.png" alt="C++">
+    </div>
 </body>
 </html>
